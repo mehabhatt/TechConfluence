@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            box-sizing: border-box;
+        }
+        .body{
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background: linear-gradient(135deg, #96d4fd, #edebee);
+        }
+    
+        .form-box {
+            width: 90%;
+            max-width: 491px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 50px 60px 143px;
+            text-align: center;
+        }
+    
+        .form-box h1 {
+            font-size: 36px;
+            margin-bottom: 60px;
+            color: #3c00a0;
+            position: relative;
+        }
+    
+        .form-box h1::after {
+            content: '';
+            width: 37px;
+            height: 4px;
+            border-radius: 3px;
+            background: #3c00a0;
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    
+        .form-box h4 {
+            color: red;
+            position: relative;
+        }
+    
+        .input-field {
+            background: #eaeaea;
+            margin: 15px 0;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            max-height: 65px;
+            transition: max-height 0.5s;
+            overflow: hidden;
+        }
+    
+        input {
+            width: 100%;
+            background: transparent;
+            border: 0;
+            outline: 0;
+            padding: 18px 15px;
+        }
+    
+        form p {
+            text-align: left;
+            font-size: 13px;
+        }
+    
+        form p a {
+            text-decoration: none;
+            color: #3c00a0;
+        }
+    
+        .btn-field button {
+            width: 100%;
+            height: 40px;
+            border-radius: 40px;
+            background: #3c00a0;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            color: #eaeaea;
+        }
+    
+        .input-group {
+            height: 205px;
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="form-box">
+        <h1 id="title">Book your tickets</h1>
+        <form>
+            <div class="input-group">
+                <div class="input-field">
+                    <input type="text" placeholder="Enter your name">
+                </div>
+
+                <div class="input-field">
+                    <input type="text" placeholder="Email-Id">
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Contact No.">
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="College">
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Remarks">
+                </div>
+
+            <div class="btn-field">
+                <button type="button">Submit</button>
+            </div>
+        </form>
+    </div>
